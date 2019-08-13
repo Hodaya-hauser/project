@@ -1,0 +1,49 @@
+<p>
+  adverisment-area works!
+</p>
+<h1>שלום_____________</h1>
+<br/>
+<h3>ניהול האיזור האישי שלי</h3>
+<div>
+  <form>
+    שם מוצר:<input type="text"  id="product" name="product"><br/>
+    תיאור המוצר:<input type="text" id="discribe"name="discribe"><br/>
+    קוד קופון:<input type="text"  id="id"name="id"><br/>
+    שירות/מוצר:<input list="kind"  name="kind">
+    <datalist id="kind">
+        <option [value]="ar.id" *ngFor="let ar of arr">
+         {{ar}}
+       </option></datalist><br/>
+    קטגוריה:<input list="category" name="category"><br/>
+    <datalist id="category"><br/>
+        <option [value]="ar.id" *ngFor="let ar of arr">
+         {{ar}}
+       </option></datalist><br/>
+    עיר:<input list="town"  name="town">
+    <datalist id="town">
+        <option [value]="ar.id" *ngFor="let ar of arr">
+         {{ar}}
+       </option></datalist><br/>
+    כתובת מלאה:<input type="text" id="address"name="address"><br/>
+    תמונה: <input type="file" (change)="onFileChanged($event)"><br/>
+    טלפון:<input type="text"  id="phone"name="phone"><br/>
+    <input type="submit" value="שמור">
+   
+   
+
+  </form>
+</div>
+<div>
+  <h5>המוצרים שלי</h5>
+  <table border="1">
+    <tr >
+      <td *ngFor="let ar of products">{{ar}}</td>
+      <td>
+        <input type="button" value="עריכה">
+        <input type="button"value="העלאה">
+        <input type="button"value="מחיקה">
+      </td>
+    </tr>
+   
+  </table>
+</div>

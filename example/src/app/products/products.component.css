@@ -1,0 +1,16 @@
+items{
+    width: 200%;height: 200%;
+    /* margin-right: 50%; */
+}
+#item1{ width: 50%;height: 50%;
+    /* margin-right: 50%  */
+}#item2{
+    margin-left: 150%;height: 150%;
+   }
+   #img{
+      margin-top: 50% ;
+   }
+  /* #costbsdno{margin-bottom: 50%;} 
+  #cost{margin-bottom: 50%;}
+  #discraption{margin-bottom: 25%;} */
+  #item{margin-top: 50% ;}

@@ -1,0 +1,31 @@
+<p>
+  buyconnect works!
+</p>
+<form name="connect" (ngSubmit)="connect()">
+    <!-- [(ngModel)]="adddisk.Discrbtion" name.errors&&-->
+       שם פרטי:<input type="text" name="fname" id="fname"  required /><br>
+      
+        
+       <!-- </div> -->
+     <!-- [(ngModel)]="adddisk.object"object.errors&& -->
+        שם משפחה:<input type="text" name="lamily" id="lamily"  required /><br>
+       
+       <!-- </div> --> 
+       <!-- [(ngModel)]="adddisk.name" mail.errors&& -->
+        אמייל:<input type="text" name="mail" id="mail" required /><br>
+       
+       <!-- </div> -->
+       <!--  town.errors&&-->
+        עיר:<input list="town" name="town" >
+        <datalist id="town">
+         <option [value]="ar.id" *ngFor="let ar of arr">
+          {{ar}}
+        </option></datalist><br/>
+      <!-- </div>  -->
+      <div> 
+        <!-- #tl="ngModel" -->
+      טלפון:<input type="text" name="phone" id="phone"  /><br>
+     </div>
+        <input type="submit" value="שמירה"/>
+       </form>
+   

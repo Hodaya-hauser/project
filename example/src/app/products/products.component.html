@@ -1,0 +1,57 @@
+<p>
+  products works!
+</p>
+<div>
+<input type="button" id="searchaccord" value="חיפוש לפי"/>
+<form app-products style="visibility:hidden;">
+    מוצר: <input list="product" name="product" >
+    <datalist id="product">
+     <option [value]="ar.id" *ngFor="let ar of arr">
+      {{ar}}
+    </option></datalist><br/>
+   ספק:<input list="provider" name="provider" >
+   <datalist id="provider">
+    <option [value]="ar.id" *ngFor="let ar of arr">
+     {{ar}}
+   </option></datalist><br/>
+   מיקום חנות:<input list="placestore" name="placestore" >
+   <datalist id="placestore">
+    <option [value]="ar.id" *ngFor="let ar of arr">
+     {{ar}}
+   </option></datalist><br/>
+
+ </form>
+</div>
+<div>
+<input type="button" id="categury" value="קטגוריות"/>
+<div>
+    <table border="1">
+        <tr>
+          <td *ngFor="let item of categoryts">{{item}}</td>
+        </tr>
+      </table>
+</div>
+</div>
+----------------------------------------------המוצרים:-----------------------------------------------------------
+<table border="1">
+    <tr>
+      <td *ngFor="let item1 of nnn" id="items">
+       <div id="item1">
+          <div id="item">{{item1.item}}</div>
+          <div id="discraption">{{item1.discraption}}</div>
+          <div id="cost">{{item1.cost}}</div>
+        </div>
+       <div id="item2">
+        <div id="img">{{item1.img}}</div>
+        <div id="costbsdno">{{item1.costbsdno}}</div>
+       </div> 
+
+      </td>
+      <!-- <div *ngFor="let item1 of item"> </div> -->
+    </tr>
+  </table>
+<div>
+
+</div>
+<!-- (click)="showsing(item.id)" -->
+<!-- "(change)="func($event) -->

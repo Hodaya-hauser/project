@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="navbar" dir="rtl">
+<div class="dropdown">
+<button class="dropbtn" title="Notifications">מי אנחנו
+    <i class="fa fa-caret-down"></i>
+</button><div class="dropdown-content">
+    <a routerLink="chtinfo">אודות כוח הציבור</a>
+    <a routerLink="besadnoinfo">אודות בסדנו</a>
+    <a routerLink="writeinfo">כתבו עלינו</a>
+</div>
+
+</div>
+    <a routerLink="advice">עצות</a>&nbsp;
+    <a routerLink="services">שרותים</a>&nbsp;
+    <a routerLink="products">מוצרים</a>&nbsp;
+    <a routerLink="deals">דילים</a>&nbsp;
+    <a routerLink="advertisement">רוצה לפרסם באתר?</a>&nbsp;
+    <a routerLink="connect">צור קשר</a>&nbsp;
+    <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+</div>
+
+  
+
+<!-- חפש:<input type="text" id="search" value=""/><br/> -->
+<input type="button" id="accessibility" value="נגישות"/>
+<input type="button" id="allcoupon" value="סל קופונים"(click)="allcoupon()"/><br/>
+------------------------------------------------------------------------------------------------------------------------
+<router-outlet></router-outlet>

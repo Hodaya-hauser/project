@@ -1,0 +1,25 @@
+<p>
+  advertisement works!
+</p>
+<input type="button" value="מפרסם קיים?" id="newadv" (click)="advertisementextant()">
+<h2>מלא כאן את הפרטים ונחזור אליך בהקדם</h2>
+
+<form>
+שם פרטי:<input type="text" id="fname"name="fname"><br/>
+שם משפחה:<input type="text" id="lname"name="lname"><br/>
+עיר:<input list="town" name="town">
+<datalist id="town">
+    <option [value]="ar.id" *ngFor="let ar of arr">
+     {{ar}}
+   </option></datalist><br/>
+פלאפון:<input type="text" id="phon1"name="phon1"><br/>
+פלאפון נוסף(אם קיים):<input type="text" id="phon2"name="phon2"><br/>
+תחום:<input list="kind" name="kind">
+<datalist id="kind">
+    <option [value]="ar.id" *ngFor="let ar of arr">
+     {{ar}}
+   </option></datalist><br/>
+מייל:<input type="text" id="mail"name="mail"><br/>
+תז:<input type="text" id="tz"name="tz"><br/>
+<input type="submit">
+</form>
